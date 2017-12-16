@@ -1,8 +1,6 @@
-{% extends "base.html" %}
-{% block content %}
-<p> <img src="../static/images/sis.png" alt="SIS" align="middle"></p>
-    <h1>Hi, {{ user.nickname }}!</h1>
-    {% for post in posts %}
-    <div><p>{{ post.author.nickname }} says: <b>{{ post.body }}</b></p></div>
+{% extends 'base.html' %}
+{% block play %}
+{% for i in range(music_files_number) %}
+    <p><a href="/{{ music_files[i] }}"> {{ i+1 }}) {{ music_files[i] }} </a></p>
 {% endfor %}
 {% endblock %}
