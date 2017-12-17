@@ -21,4 +21,3 @@ def song(filename):
     return render_template('play.html',
                         title = filename,
                         music_file = filename)
-
